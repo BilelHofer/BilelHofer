@@ -1,2 +1,294 @@
-<h1> Bonjour le monde !</h1>
-<p>Je suis un tout petit paragraphe</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Mon blog</title>
+        <style>
+        
+            body{
+                margin: 6px;
+                padding:0px;
+                background:
+                radial-gradient(circle farthest-side at 0% 50%,
+                rgb(12, 109, 166) 23.5%,rgba(0, 0, 0,0) 0)21px 30px,
+                
+                radial-gradient(circle farthest-side at 0% 50%,
+                blue 24%,rgba(0, 0, 0,0) 0)19px 30px,
+                
+                linear-gradient(rgb(12, 109, 166) 14%,
+                rgba(240,166,17,0) 0, rgba(0, 0, 0,0) 85%,
+                rgb(12, 109, 166) 0)0 0,
+                
+                linear-gradient(150deg,rgb(12, 109, 166) 24%,
+                blue 0,blue 26%,rgba(0, 0, 0,0) 0,
+                rgba(0, 0, 0,0) 74%,blue 0,blue 76%,
+                rgb(12, 109, 166) 0)0 0,
+                
+                linear-gradient(30deg,rgb(12, 109, 166) 24%,
+                blue 0,blue 26%,rgba(0, 0, 0,0) 0,
+                rgba(0, 0, 0,0) 74%,blue 0,blue 76%,
+                rgb(12, 109, 166) 0)0 0,
+                
+                linear-gradient(90deg,blue 2%,
+                rgb(12, 109, 166) 0,rgb(12, 109, 166) 98%,
+                blue 0%)0 0 rgb(12, 109, 166);
+                
+                background-size: 40px 60px;
+                
+            }
+            
+            img {
+                 z-index: 1;
+            }
+ 
+
+            #en-tete{
+                background-color: rgb(174, 199, 212);
+                border:solid;
+                height:241px;
+                
+                
+            }
+            
+            #photo-de-profil{
+                border-radius:50px;
+                border:solid black 2px;
+                width:80px;
+                height:80px;
+                position:fixed;
+                top:17px; left:17px;
+                z-index: 2;
+                
+                
+            }
+            
+            #pseudo{
+                position: absolute;
+                top: -13px; left: 116px; 
+                color: black;
+                font-size:1.4em;
+            }
+            
+            #trait-pseudo{
+                border-top: 2px solid #000;
+                width : 452px;
+                
+            }
+            
+            #biographie{
+                position:relative;
+                top:82px;left:10px;
+            }
+    
+            #texte-biographie{
+                position:relative;
+                left:20px;
+                font-style:italic;
+                font-weight:bold;
+            }
+            
+            #premier-poste{
+                position:relative;
+                top:10px;
+                border:solid;
+                background-color: rgb(174, 199, 212);
+                background-image:
+                linear-gradient(rgb(104, 104, 107) .1em, 
+                transparent .1em);
+                
+                background-size: 100% 1.16em;
+            }
+            
+            #image-chat{
+                position:relative;
+                left:258px;
+                width: 304px;
+                height:200px;
+                border-left:solid 2px;
+            }
+            
+            .commentaire-version1{
+                position:absolute;
+                top:-13px;left:10px;
+                font-weight:bold;
+                
+            }
+                        
+            .commentaire-version2{
+                position:absolute;
+                top:-13px;left:317px;
+                font-weight:bold;
+                
+            }
+            
+            #deuxieme-poste{
+                position:relative;
+                top:20px;
+                height:197px;
+                border:solid;
+                background-color: rgb(174, 199, 212);
+                background-image:
+                linear-gradient(rgb(104, 104, 107) .1em, 
+                transparent .1em);
+                
+                background-size: 100% 1.16em;
+            }
+            
+            #slider{
+                display: flex;
+                width:302px;
+                overflow: hidden;
+                border:solid 2px;
+            }
+            .voiture{
+
+                height: 195px;
+                width:300px;
+                border-right: 2px solid;
+                float: left;
+                animation: glisse 20s infinite;
+            }
+            
+            @keyframes glisse {
+                0%{
+                    transform: translateX(0);
+                }
+                33%{
+                    transform: translateX(-302px);
+                }
+                43%{
+                    transform: translateX(-302px);
+                }
+                66%{
+                    transform: translateX(-602px);
+                }
+                76%{
+                    transform: translateX(-602px);
+                }
+                100%{
+                    transform: translateX(0px);
+                }
+            }
+          
+            #troisieme-poste{
+                position:relative;
+                top:30px;
+                border:solid;
+                background-color: rgb(174, 199, 212);
+                background-image:
+                linear-gradient(rgb(104, 104, 107) .1em, 
+                transparent .1em);
+                
+                background-size: 100% 1.16em;
+
+            }
+            
+            #plat-preferer{
+                position:relative;
+                left:258px;
+                width: 304px;
+                height:200px;
+                border-left:solid 2px;
+                
+            }
+            
+            #quatrieme-poste{
+                position:relative;
+                top:40px;
+                height:197px;
+                border:solid;
+                background-color: rgb(174, 199, 212);
+                background-image:
+                linear-gradient(rgb(104, 104, 107) .1em, 
+                transparent .1em);
+                
+                background-size: 100% 1.16em;
+                
+            }
+            
+            #beau-paysage{
+                height: 195px;
+                width:300px;
+                border-right: 2px solid; 
+                
+            }
+        </style>
+    </head>
+    <body>
+    
+
+        <!-- L'en tête de mon blogue-->
+        <div id="en-tete">
+            <div id="pseudo">
+                <h1>Bilel Hofer<hr id="trait-pseudo"/></h1>
+            </div>
+            
+            <!-- Photo de profil-->
+            <div>
+                 <a href="#en-tete"><img  id="photo-de-profil" src="https://www.kasandbox.org/programming-images/animals/penguins.png" alt="Photo de chat" ></a>
+            </div>
+            <div id="biographie">
+                <!-- La biogaphie -->            
+                <p id="texte-biographie">Bonjour et bienvenu sur mon blogue, ci-dessous vous trouverez <br>tout les lien vers mes postes </p>
+                
+                <ul>
+                    <li><a href="#premier-poste">
+                    Photo de chat</a></li>
+                    <li><a href="#deuxieme-poste">
+                    Diaporama de voiture</a></li>
+                    <li><a href="#troisieme-poste">
+                    Mon plat préférer</a></li>
+                    <li><a href="#quatrieme-poste">
+                    Beau paysage</a></li>
+                </ul>
+            </div>
+         </div>
+
+        <!--Le premier poste-->
+         <div id="premier-poste">
+            <img id="image-chat" src="https://www.kasandbox.org/programming-images/animals/cat.png" alt="Belle image d'un chat">
+            
+            <!--Commentaire-->
+            <p class="commentaire-version1">Voici un petit chat, il est trop choux.<br/>si vous ne savez pas ce que c'est<br/> je vous met des informations
+            <br/>plus bas.<br/><br/>Il est l’un des principaux                animaux<br/> de compagnie et compte<br/>aujourd’hui               une cinquantaine <br/>de races différentes reconnues              <br/>Dans de très nombreux pays.</p>
+         </div>
+         
+         <!--Deuxieme poste-->
+         <div id="deuxieme-poste">
+            <!--Diaporama-->
+            <div id="slider">
+                <div>
+                  <img class="voiture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Peugeot_308_Mk2_Front.jpg/1920px-Peugeot_308_Mk2_Front.jpg" alt="Une voiture">
+                </div>
+                <div>
+                  <img class="voiture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/14_Tesla_Model_S.jpg/1920px-14_Tesla_Model_S.jpg" alt="Une voiture électrique">
+                 </div>
+                 <div>
+                    <img class="voiture" src= "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Ferrari_458_Italia_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg/420px-Ferrari_458_Italia_-_Mondial_de_l%27Automobile_de_Paris_2012_-_001.jpg"                       alt= "Une voiture">
+                 </div>
+            </div>
+            <!--Commentaire-->
+            <p class="commentaire-version2">Je n'aime pas                     spécialement les voiture mais j'ai voulu faire un
+            <br/>petit diaporama, rien de mieu que des voiture                pour faire ça.</p>
+         </div>
+         
+         <!-- troisieme-poste-->
+         <div id="troisieme-poste">
+            <img id="plat-preferer" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/RedDot_Burger.jpg/1920px-RedDot_Burger.jpg" 
+                alt="Image d'humburger">
+            
+            <!--Commentaire-->
+            <p class="commentaire-version1">Voila mon plat                    préférer,si vous <br/>ne savez pas ce que c'est je                vous <br/>met des informations plus bas. <br/><br/>est             un sandwich d'origine <br/>allemande, composé de deux             pains<br/> de forme ronde généralement garnis<br/> de             steak haché et de crudités,<br/> salade, tomate,                  oignon, cornichon,<br/> et de sauce…</p>
+         </div>
+         
+         <!-- quatrieme-poste-->
+         <div id="quatrieme-poste">
+             <img id="beau-paysage" src="https://www.kasandbox.org/programming-images/seasonal/snowy-slope-with-trees.png" 
+             alt="beau paysage enneiger">
+             
+             <!-- commentaire -->
+             <p class="commentaire-version2">j'adors les paysage enneiger, si vous ne savez pas ce que c'est je vous <br/>met des informations plus bas. <br/><br/>Les paysages hivernaux et enneigés n'ont pas été représentés avant le xve siècle, du fait que la grande majorité des productions étaient religieuses.</p>
+             
+         </div>
+    </body>
+</html>
