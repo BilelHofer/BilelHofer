@@ -11,4 +11,10 @@
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </a>
 </div>
+<!-- <img align="left" alt="Bilel Hofer GitHub Stats" src="https://github-stats-6zojkjjtx-bilelhofer.vercel.app/api?username=BilelHofer&show_icons=true&hide_border=true" /> 
+  voir https://vercel.com/bilelhofer/github-stats/DrhpyWLUpv7Wc9o4dnGwemhiBdBG ici
+
+-->
+
+
 </div>
