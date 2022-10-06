@@ -11,12 +11,11 @@
     <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
   </a>
 </div>
-<!-- <img align="left" alt="Bilel Hofer GitHub Stats" src="https://github-stats-bilelhofer.vercel.app/api?username=BilelHofer&show_icons=true&hide_border=true" /> 
-  voir https://vercel.com/bilelhofer/github-stats/DrhpyWLUpv7Wc9o4dnGwemhiBdBG ici
-![image](https://user-images.githubusercontent.com/75837841/194083643-8af1061d-f060-4d6b-b9dd-3176e96f5565.png)
-
-
--->
-
+ <!-- GitHub stat card 
+ <img alt="Bilel Hofer GitHub Stats" src="https://github-stats-bilelhofer.vercel.app/api?username=BilelHofer&show_icons=true&hide_border=true" />
+ -->
+ <!-- GitHub language card
+ <img alt="Bilel Hofer GitHub Language" src="https://github-stats-bilelhofer.vercel.app/api/top-langs/?username=BilelHofer&layout=compact" /> 
+ -->
 
 </div>
